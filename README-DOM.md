@@ -66,7 +66,7 @@ document.getElementById(idName).classList.contains('className')
 document.getElementById(idName).classList.toggle('satu', 'dua')
 ```
 ### node manipulation
-[read more here](https://www.w3schools.com/jsref/met_document_createelement.asp)
+[read more here](https://www.w3schools.com/jsref/met_document_createelement.asp) and [here](http://www.java2s.com/Tutorials/Javascript/Tutorial/0820__Javascript_Node_Manipulation.htm)
 ```bash
 var a = element.createElement('p');
 var text = element.createTextNode('your text here');

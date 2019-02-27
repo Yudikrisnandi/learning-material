@@ -64,7 +64,7 @@ document.getElementById(idName).classList.remove()
 document.getElementById(idName).classList.toggle()
 document.getElementById(idName).classList.item(2)
 document.getElementById(idName).classList.contains('className')
-document.getElementById(idName).classList.toggle('satu', 'dua')
+document.getElementById(idName).classList.replace('satu', 'dua')
 ```
 ### node manipulation
 [read more here](https://www.w3schools.com/jsref/met_document_createelement.asp) and [here](http://www.java2s.com/Tutorials/Javascript/Tutorial/0820__Javascript_Node_Manipulation.htm)

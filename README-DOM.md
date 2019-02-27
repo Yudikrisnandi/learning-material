@@ -1,4 +1,5 @@
 # DOM (Document Object Model)
+[Youtube playlist web programing unpas about DOM, click here](https://www.youtube.com/watch?v=aT60R1cySLM&list=PLFIM0718LjIWB3YRoQbQh82ZewAGtE2-3)
 
 Representasi element HTML pada dokumen yang akan di modelkan atau di terjemakan sebagai objek.
 

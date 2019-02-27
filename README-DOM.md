@@ -69,12 +69,12 @@ document.getElementById(idName).classList.toggle('satu', 'dua')
 ### node manipulation
 [read more here](https://www.w3schools.com/jsref/met_document_createelement.asp) and [here](http://www.java2s.com/Tutorials/Javascript/Tutorial/0820__Javascript_Node_Manipulation.htm)
 ```bash
-var a = element.createElement('p');
-var text = element.createTextNode('your text here');
+var a = document.createElement('p');
+var text = document.createTextNode('your text here');
 a.appendChild(text)
 a.insertBefore(new-elemenet element)
-element.removeChild()
-element.replaceChild(newElement,oldElement)
+a.removeChild()
+a.replaceChild(newElement,oldElement)
 ```
 
 ## Event

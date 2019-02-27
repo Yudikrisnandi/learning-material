@@ -3,7 +3,7 @@
 
 Representasi element HTML pada dokumen yang akan di modelkan atau di terjemakan sebagai objek.
 
-Objek dari dokumen ini menyediakan sekumpulan fungsi dan atribut/dat yang bisa kita manfaatkan dalam memanipulasi element-element HTML.
+Objek dari dokumen ini menyediakan sekumpulan fungsi dan atribut/data yang bisa kita manfaatkan dalam memanipulasi element-element HTML.
 
 DOM oleh browser akan di simpan membentuk sebuah hirarki yang di sebut sebagai DOM tree.
 
@@ -24,7 +24,7 @@ document.getElementById(idName)
 document.querySelector(.className,#idName,tagName)
 ```
 
-#### Single element
+#### multi element
 
 ```bash
 document.querySelectorAll(.className)

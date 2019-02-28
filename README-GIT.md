@@ -36,6 +36,7 @@ git config --list
 
 ```bash
 git init
+git flow init //for git flow
 ```
 
 ## Simpan Perubahan dan Revisi
@@ -69,6 +70,53 @@ git commit -m '[Yudi] - your message'
 Argumen -m, berfungsi untuk menambahkan pesan pada setiap perubahan yang di lakukan.
 
 Pesan di simpan di dalam tanda petik satu atau petik dua.
+
+## Branching
+
+- Check branch
+```bash
+git branch
+```
+- Pindah branch
+```bash
+git checkout namebranc
+```
+- Membuat branch baru
+```bash
+git checkout -b namabranch
+```
+- Menghapus branch
+```bash
+git branch -D namabranch
+git branch -d namabranch
+```
+- Merubah nama branch
+```bash
+git branch -m new-name #jika kamu berada di branch yang ingin kamu ganti
+git branch -m old-name new-name #jika kamu berada di branch yang berbeda dari branch yang akan kamu  ganti
+```
+## Collaborasi
+
+```bash
+git fetch
+git pull
+git push
+git remote add
+```
+
+## History
+```bash
+git log
+git show
+git status
+git diff
+```
+
+## Mengatasi commit behind ketika merge request
+```bash
+git pull origin targer-branch
+git push origin your-branch
+```
 
 ## Membuat ssh-key
 [Baca artikelnya di sini](https://medium.com/@yudi_krisnandi/5-langkah-mudah-membuat-ssh-key-b0bfe604e177)

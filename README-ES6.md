@@ -139,6 +139,22 @@ console.log(club.player[0]);
 ### Class and subclass
 
 ```javascript
+// Class
+class Club {
+  constructor(name, city) {
+    this.name = name;
+    this.city = city;
+  }
+  greet() {
+    return `${this.name} is a club from ${this.city}`
+  }  
+}
+
+//const milan = new Club('AC Milan', 'Milano');
+//console.log(milan.greet())
+
+
+// Subclass
 class Italia extends Club{
   constructor(name, city, country){
     super(name, city);

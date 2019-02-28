@@ -28,6 +28,8 @@ var yudi = new Person('Yudi', 'lts')
 ```
 ## Prototype
 
+All JavaScript objects inherit properties and methods from a prototype.
+
 ```javascript
 function Anime(name,author) {
     this.name = name;

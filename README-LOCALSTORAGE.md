@@ -3,12 +3,12 @@
 ```javascript
 // set local storage item
 
-localStorage.setItem('name', 'John');
+localStorage.setItem('name', 'Yudi');
 localStorage.setItem('age', '30');
 
 // set session storage item
 
-sessionStorage.setItem('name', 'Beth');
+sessionStorage.setItem('name', 'Yudi);
 
 // remove from storage
 
@@ -28,21 +28,21 @@ Store multi value to local storage
 
 ```javascript
 document.querySelector('form').addEventListener('submit', function(e){
-  const anime = document.getElementById('task').value;
+  const anime = document.getElementById('name').value;
 
   let animes;
 
   if(localStorage.getItem('animes') === null) {
-    tasks = [];
+    animes = [];
   } else {
     // JSON.parse confert text string(json format) to javascript object
-    tasks = JSON.parse(localStorage.getItem('animes'));
+    animes = JSON.parse(localStorage.getItem('animes'));
   }
 
   animes.push(anime);
 
   // JSON.stringify confert javascript object to text string(json format)
-  localStorage.setItem('tasks', JSON.stringify(animes));
+  localStorage.setItem('animes', JSON.stringify(animes));
 
   alert('Animes saved');
 

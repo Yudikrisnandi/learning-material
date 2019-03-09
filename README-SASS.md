@@ -23,10 +23,37 @@ $blue-color-primary: rgb(0, 0, 233);
     .another-child {
         color: $blue-color-primary;
     }
-    h1 {
+    a {
         text-align: center;
+        &:hover {
+            color: $red-color-primary;
+        }
     }
 }
 ```
 
 ## Mixin
+
+```scss
+@mixin linkgan {
+   text-decoration: none;
+   text-transform: toUpperCase;
+   color: $red-color-primary;
+}
+
+a:link {
+    @include linkgan;
+}
+```
+
+## Fucnntion
+
+```scss
+@function lebar($a, $b) {
+  @return $a / $b;
+}
+
+.className {
+    width: lebar(100, 2) * 1px;
+}
+```

@@ -46,7 +46,7 @@ a:link {
 }
 ```
 
-## Fucnntion
+## Fucntion
 
 ```scss
 @function lebar($a, $b) {

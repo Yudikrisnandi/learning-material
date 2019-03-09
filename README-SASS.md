@@ -1,6 +1,7 @@
-# CSS PREPROCESSOR
+# CSS PREPROCESSOR WITH SASS
 
 ## Variable
+
 ```scss
 $red-color-primary: rgb(255, 0, 0);
 $blue-color-primary: rgb(0, 0, 233);
@@ -11,6 +12,7 @@ $blue-color-primary: rgb(0, 0, 233);
 ```
 
 ## Nesting
+
 ```scss
 $red-color-primary: rgb(255, 0, 0);
 $blue-color-primary: rgb(0, 0, 233);
@@ -57,3 +59,15 @@ a:link {
     width: lebar(100, 2) * 1px;
 }
 ```
+
+## Partials & Import
+
+Sass memungkinkan kamu membuat sebagian file sass yang dapat Anda sertakan dalam file Sass lainnya
+
+Membuat partial sass file dengan format berikut _filename.scss
+
+Untuk menggunakan partial file sass yang telah kamu buat di file sass line, kamu bisa memanggilnya dengan keyword @import 'filename';
+
+
+
+

@@ -53,6 +53,7 @@ let club = {
 ## Pengkondisian
 
 if statement :
+
 ```javascript
 if(true) {
     console.log('do somethins here')
@@ -97,6 +98,38 @@ switch(expression) {
 ```
 
 [read more here](https://www.w3schools.com/js/)
+
+## Looping
+
+for looping :
+
+```javascript
+for(let x = 1; x >= 10; x++) {
+  console.log(i)
+}
+```
+
+while loop :
+
+```javascript
+let n = 0;
+while(n<5) {
+  n++;
+  console.log(n);
+}
+```
+
+do while loop :
+
+
+```javascript
+var i = 0;
+
+do {
+  i++;
+  console.log(i);
+}while(i<5);
+```
 
 
 

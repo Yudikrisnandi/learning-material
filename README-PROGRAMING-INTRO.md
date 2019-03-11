@@ -49,6 +49,54 @@ let club = {
     champion: 7
 }
 ```
+## Operator
+
+```javascript
+// Aritmetika misal(+  -  /  *  %)
+
+var a = 4;
+var b= 4;
+
+console.log(a+b
+console.log(a-b);
+console.log(a/b);
+console.log(a*b);
+console.log(a%b);
+
+
+// Penugasan  -=  += /= *=
+
+var c = 4
+
+console.log(c+=5); // ini sama dengan c = c + 5
+
+// Pembandingan  ==  !==  ===, mereturn boolean
+
+var d = 4;
+var e = 5;
+
+console.log(d == e);
+console.log(d !== e);
+console.log(dd === e);
+
+// Logika  &&  ||, mereturn boolean
+
+true && true // output true;
+true || false // output true;
+
+// String  +
+
+var name = 'Yudi' + ' ' + 'krisnandi'
+
+// typeof type data
+var num = 42
+
+typeof(num)//output number
+
+// kondisi
+
+true ? console.log('this true') : console.log('this false');
+```
 
 ## Pengkondisian
 
@@ -99,7 +147,7 @@ switch(expression) {
 
 [read more here](https://www.w3schools.com/js/)
 
-## Looping
+## Looping/Pengulangan
 
 for looping :
 

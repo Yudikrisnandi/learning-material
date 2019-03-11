@@ -77,7 +77,7 @@ var e = 5;
 
 console.log(d == e);
 console.log(d !== e);
-console.log(dd === e);
+console.log(d === e);
 
 // Logika  &&  ||, mereturn boolean
 

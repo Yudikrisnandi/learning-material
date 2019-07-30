@@ -114,5 +114,14 @@ An inline element does not start on a new line and only takes up as much width a
 - display: grid;
 - grid-template-column
 - grid-template-rows
+- grid-colomn-gap
+- grid-rows-gap
+- grid-gap
 
 #### Items
+
+- grid-row-start
+- grid-column-start
+- grid-row
+- grid-column : 1 / span 3
+- grid-area

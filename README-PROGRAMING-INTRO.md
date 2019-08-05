@@ -1,11 +1,12 @@
 # DASAR-DASAR PEMPROGRAMAN
 
-Program adalah kumpulan/serangkaian instruksi  terstrukstur yang di berikan ke pada komputer untuk menyelesaikan sebuah masalah.ex:arah ke masjid
+Program adalah kumpulan/serangkaian instruksi terstrukstur yang di berikan ke pada komputer untuk menyelesaikan sebuah masalah.ex:arah ke masjid
 Bagaiman memberikan instruksi ke komputer
 
 Pemprograman adalah cara kita memberi instruksi ke komputer
 
 ## Konsep dasar pemprogramnan
+
 - Variable
 - Type data
 - Control flow dengan pengkondisian
@@ -23,32 +24,68 @@ var a = "Anata";
 let b = "wa";
 const c = "daisuki";
 ```
+
 Untuk melihat perbedaan dari ketiga cara mendeklarasikan variable tersebut silakan nonton videonya [di sini](https://www.youtube.com/watch?v=7HDgJScwIrI)
 
 ## Type data
 
 - String
+
 ```javascript
-let name = 'Yudi'
+let name = "Yudi";
+/*
+concatenation
+get character
+get length
+string methods
+*/
 ```
 
 - Number
+
 ```javascript
-let angka = 2
+let angka = 2;
+/*
+math operators
+math methods
+*/
 ```
 
 - Boolean
+
 ```javascript
-true || false
+true || false;
 ```
+
+- Null
+
+```javascript
+let name = null;
+```
+
+- Undifined
+
+```javascript
+let a;
+console.log(a);
+```
+
+- array
+
+```javascript
+let buku = ["rich dad and poor dad", 1, true];
+```
+
 - Object
+
 ```javascript
 let club = {
-    name: 'AC Milan',
-    city: 'Milano',
-    champion: 7
-}
+  name: "AC Milan",
+  city: "Milano",
+  champion: 7
+};
 ```
+
 ## Operator
 
 ```javascript
@@ -100,26 +137,25 @@ true ? console.log('this true') : console.log('this false');
 
 ## Pengkondisian
 
-if statement :
+- if statement :
 
 ```javascript
-if(true) {
-    console.log('do somethins here')
+if (true) {
+  console.log("do somethins here");
 }
 ```
 
-if else statement :
+- if else statement :
 
 ```javascript
-if(true) {
-    console.log('do something here')
-}else{
-    console.log('do something here')
+if (true) {
+  console.log("do something here");
+} else {
+  console.log("do something here");
 }
 ```
 
-else if statement :
-
+- else if statement :
 
 ```javascript
 if(true) {
@@ -131,9 +167,10 @@ if(true) {
 }
 ```
 
-switch statement :
+- switch statement :
+
 ```javascript
-switch(expression) {
+switch (expression) {
   case x:
     // code block
     break;
@@ -141,7 +178,7 @@ switch(expression) {
     // code block
     break;
   default:
-    // code block
+  // code block
 }
 ```
 
@@ -152,8 +189,8 @@ switch(expression) {
 for looping :
 
 ```javascript
-for(let x = 1; x >= 10; x++) {
-  console.log(i)
+for (let x = 1; x >= 10; x++) {
+  console.log(i);
 }
 ```
 
@@ -161,7 +198,7 @@ while loop :
 
 ```javascript
 let n = 0;
-while(n<5) {
+while (n < 5) {
   n++;
   console.log(n);
 }
@@ -169,16 +206,11 @@ while(n<5) {
 
 do while loop :
 
-
 ```javascript
 var i = 0;
 
 do {
   i++;
   console.log(i);
-}while(i<5);
+} while (i < 5);
 ```
-
-
-
-

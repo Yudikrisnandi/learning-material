@@ -4,6 +4,8 @@ Ada 2 paradigma pemprogram :
 1. Pemprograman prosedural
 2. Pemprograman berorientasi objek
 
+[read more here](https://medium.com/@yudi_krisnandi/belajar-fundamental-opp-dengan-javascript-c1b721677ce9)
+
 contoh objek literal :
 ```javascript
 var user = {

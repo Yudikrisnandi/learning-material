@@ -63,4 +63,73 @@ if (nama !== '' && peran === 'Penyihir') {
 }
 
 
+/* Exercise 3
+Implementasikan function 'ubahString' untuk mengganti angka-angka yang ada di dalam 'str' menjadi 
+sebuah huruf yang sesuai dengan aturan:
+1 = i
+4 = a
+3 = e
+7 = u
+0 = o
+// Test cases
+// gunakan arrow function dan atau guard clause untuk latihan ini !
+console.log(numberLetters('prat1w1n7r4m1n1')); // pratiwinuramini
+console.log(numberLetters('y7d1kr1sn4nd1')); // mas yudi 
+console.log(numberLetters('b4d41')); // badai
+*/
+
+function numberLetters(kata) {
+
+    var kataBaru = []
+
+    for(var i = 0; i <= kata.length; i++) {
+
+        switch (kata[i]) {
+            
+            case "1":
+                kataBaru[i] = "i";    
+                break;
+            case "4":
+                kataBaru[i] = "a";
+                break;
+            case "3":
+                kataBaru[i] = "e";
+                break;
+            case "7":
+                kataBaru[i] = "u";
+                break;
+            case "0":
+                kataBaru[i] = "o"
+            default:
+                kataBaru[i] = kata[i];
+                break;
+        } 
+
+        // }
+        // if (kata[i] === "1") {
+        //     kataBaru[i] = "i";
+        // }
+        // if (kata[i] === "4") {
+        //     kataBaru[i] = "a";
+        // } 
+        // if (kata[i] = "3") {
+        //     kataBaru[i] = "e";
+        // } 
+        // if (kata[i] === "7") {
+        //     kataBaru[i] === "u";
+        // } 
+        // if (kata[i] === "0") {
+        //     kataBaru[i] = "o";
+        // } 
+        // if (kata[i] === kata[i]) {
+        //     kataBaru[i] = kata[i];
+        // }
+
+    }
+    return kataBaru.join('');
+}
+
+console.log(numberLetters('prat1w1n7r4m1n1')); // pratiwinuramini
+console.log(numberLetters('yud1'));
+
 

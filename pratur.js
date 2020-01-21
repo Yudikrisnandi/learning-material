@@ -1,54 +1,54 @@
 // NO.1 PERULANGAN FORZA MILAN
-// function cetak(num){
-//     for(var i=1; i<=num ; i++){
+function cetak(num){
+    for(var i=1; i<=num ; i++){
 
-//       // if(i==i){
-//       //   console.log(i)
-//       // }
-//       if(i%2==0 && i%5==0){
-//         console.log("Forza Milan "+i)
-//       }
-//       else if(i%5==0){
-//         console.log("Milan "+i)
-//       }
-//       else if(i%2==0){
-//         console.log("Forza "+i)
-//       }
-//       else{
-//         console.log(i)
-//       }
-//     }
-// }
-//  cetak(30);
+      // if(i==i){
+      //   console.log(i)
+      // }
+      if(i%2==0 && i%5==0){
+        console.log("Forza Milan "+i)
+      }
+      else if(i%5==0){
+        console.log("Milan "+i)
+      }
+      else if(i%2==0){
+        console.log("Forza "+i)
+      }
+      else{
+        console.log(i)
+      }
+    }
+}
+ cetak(30);
 
 // NO.2 GAME GLINTS
-// var names="Yudi";
-// var roles="Tabib";
-// var welcome="Selamat datang di Dunia Glints Warrior, ";
+var names="Yudi";
+var roles="Tabib";
+var welcome="Selamat datang di Dunia Glints Warrior, ";
 
-// if(names=="" && roles==""){
-//   console.log("Tidak Boleh kosong");
-// }
-// else if(names==""){
-//   console.log("Nama harus diisi!");
-// }
-// else if(roles==""){
-//   console.log("Halo Danu, Pilih peranmu untuk memulai game!");
-// }
-//  if(roles=="Ksatria"){
-//    console.log(welcome+""+names);
-//    console.log("Halo Ksatria "+names+", Tugas kamu adalah menyerang musuh!");
-//  }
+if(names=="" && roles==""){
+  console.log("Tidak Boleh kosong");
+}
+else if(names==""){
+  console.log("Nama harus diisi!");
+}
+else if(roles==""){
+  console.log("Halo Danu, Pilih peranmu untuk memulai game!");
+}
+ if(roles=="Ksatria"){
+   console.log(welcome+""+names);
+   console.log("Halo Ksatria "+names+", Tugas kamu adalah menyerang musuh!");
+ }
 
-//   if(roles=="Tabib"){
-//    console.log(welcome+""+names);
-//    console.log("Halo Tabib "+names+", kamu akan membantu temanmu yang terluka.");
-//  }
+  if(roles=="Tabib"){
+   console.log(welcome+""+names);
+   console.log("Halo Tabib "+names+", kamu akan membantu temanmu yang terluka.");
+ }
 
-//   if(roles=="Penyihir"){
-//    console.log(welcome+""+names);
-//    console.log("Halo Penyihir "+names+", Tciptakan keajaiban yang membantu kemenanganmu!");
-//  }
+  if(roles=="Penyihir"){
+   console.log(welcome+""+names);
+   console.log("Halo Penyihir "+names+", Tciptakan keajaiban yang membantu kemenanganmu!");
+ }
 
 
 //NOMER 3

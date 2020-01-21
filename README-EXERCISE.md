@@ -3,8 +3,7 @@
 1. Clone project
 2. Dari branch develop checkout buat branch baru dengan nama "feature/namakamu"
 3. Di dalam folder project yang telah kamu clone buat file javascript dengan nama kamu, contoh yudi.js
-4. Kerjakan soal glints-warrior dengan menggunkan teknik guard clause
-5. Setelah mengerjakan soal, langsung di commit lalu push ke branch kamu dan buat merger request ke branch develop
+4. Setelah mengerjakan soal, langsung di commit lalu push ke branch kamu dan buat merger request ke branch develop
 
 Format penulisan commit dan merge message --> [Yudi] - your message
 

@@ -1,4 +1,4 @@
-/* 
+/*  Exercise 1
     Buatlah sebuah fungsi yang akan mencetak angka 1-30 ke console.
     Ketika angkanya habis di bagi 2 di depan angkanya akan di tambah string "Forza". 
     Ketika angkanya habis di bagi 5, di depan angkanya di tambah string "Milan". 
@@ -10,11 +10,17 @@ var angka2 = 30;
 
 while (angka1 <= angka2) {
     if(angka1 % 2 === 0) {
-        console.log('Forza');
+        console.log('Forza ' + angka1);
     } else if (angka1 % 5 === 0) {
-        console.log('Milan');
+        console.log('Milan ' + angka1);
     } else if (angka1 % 5 === 0 && angka1 % 2 === 0) {
-        console.log('Forza Milan');
+        console.log('Forza Milan ' + angka1);
+    } else {
+        console.log(angka1)
     }
     angka1++;
 }
+
+/* Exercise 2
+
+*/

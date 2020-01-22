@@ -120,14 +120,47 @@ yang akan mengembalikan total penjumlahan dari setiap
 elemen-elemen array tersebut.
 */
 
-function total(angka) {
-    var output = 0;
-    for (var i = 0; i < angka.length; i++) {
-        output += angka[i];
-    }
+// function total(angka) {
+//     var output = 0;
+//     for (var i = 0; i < angka.length; i++) {
+//         output += angka[i];
+//     }
 
-    return output;
+//     return output;
+// }
+
+// console.log(total([4, 2, 8, 6]));
+
+/* Exercise 5
+Diberikan 2 buah array yang berisi angka.
+Array tersebut memiliki panjang yang sama sama. 
+Buatlah sebuah fungsi yang membandingkan setiap elemen 
+dari ke dua array tersebut. 
+Fungsi akan mengembalikan score hasil perbandingan 
+ke dua array terbut.
+
+var numA = [2, 3, 5]
+var numB = [4, 1, 6]
+
+#output
+[1, 2]
+*/
+
+function banding(angka1, angka2) {
+
+    var hasilPerbandingan = [0,0];
+
+    for (var i = 0; i < angka1.length; i++){
+        if (angka1[i] < angka2[i]) {
+            hasilPerbandingan[1] += 1
+        } else {
+            hasilPerbandingan[0] += 1
+        }
+    }
+    
+    return console.log(hasilPerbandingan);
 }
 
-console.log(total([4, 2, 8, 6]));
+banding([1,2,3], [2,1,3]);
+
 

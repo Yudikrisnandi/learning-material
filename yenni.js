@@ -127,3 +127,12 @@ function bil(e){
     }   
 }
 console.log(bil([1, 3, 4, 2, 7, 6]))
+
+//No 7. (alternatif)
+function bal(e){
+    var uruts = e.sort();
+    var n = 0
+    for (var i = 0; i < uruts.length; i++){
+        if()
+    }
+}

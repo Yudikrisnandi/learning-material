@@ -32,6 +32,32 @@ document.getElementByClassName(className)
 document.getElementByTagName(tagName)
 ```
 
+## DOM Traversal 
+- childNotes
+- children 
+- firstChild
+- firstElementChild
+- childElementCount
+- parentNode
+- parentElement
+- nextSibling
+- nextElementSibling
+- previousElementSibling
+
+```javascript
+/*
+nodeType
+1. element
+2. atribut
+3. text node
+8. comment
+9. documents
+10. Doctype
+*/
+
+```
+
+
 ## DOM Manipulation
 
 
@@ -66,13 +92,14 @@ document.getElementById(idName).classList.item(2)
 document.getElementById(idName).classList.contains('className')
 document.getElementById(idName).classList.toggle('satu', 'dua')
 ```
-### node manipulation
-[read more here](https://www.w3schools.com/jsref/met_document_createelement.asp) and [here](http://www.java2s.com/Tutorials/Javascript/Tutorial/0820__Javascript_Node_Manipulation.htm)
+### create, remove, and replace an  element
 ```bash
 var a = document.createElement('p');
+a.className = "para";
 var text = document.createTextNode('your text here');
 a.appendChild(text)
 a.insertBefore(new-elemenet element)
+a.remove()
 a.removeChild()
 a.replaceChild(newElement,oldElement)
 ```

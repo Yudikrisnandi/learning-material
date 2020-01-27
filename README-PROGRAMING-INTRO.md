@@ -27,7 +27,7 @@ const c = "daisuki";
 
 Untuk melihat perbedaan dari ketiga cara mendeklarasikan variable tersebut silakan nonton videonya [di sini](https://www.youtube.com/watch?v=7HDgJScwIrI)
 
-## Type data
+## Data type
 
 - String
 
@@ -214,3 +214,31 @@ do {
   console.log(i);
 } while (i < 5);
 ```
+
+## Math
+- Math.random()
+- Math.ceil()
+- Math.floor()
+- Math.round()
+
+## String
+- length
+- indexOf
+- chartAt
+- slice
+- replace
+- toUpperCase
+- toLowerCase
+
+## Data Operation
+
+- insertion
+- deletion
+- searching
+- sorting
+- travelsal
+- acccess
+
+## Array
+
+## Object

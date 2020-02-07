@@ -1,5 +1,7 @@
 # CSS PREPROCESSOR WITH SASS
 
+A CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax
+
 ## Variable
 
 ```scss

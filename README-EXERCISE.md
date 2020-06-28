@@ -185,7 +185,7 @@ Perhatikan format outputnya berikut!
 "John menghabiskan Rp6000 untuk koleksi komik-komiknya"
 ```
 
-### 10
+### No.10
 Diberikan sebuah array arr yang berisi angka sebanyak n;
 
 Hitunglah sisa hasil bagi antara angka terbesar dan terkecil dalam array tersebut;

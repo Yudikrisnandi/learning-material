@@ -1,0 +1,127 @@
+### default editor
+-- git config --global core.editor "vim"
+-- git config --global -e
+
+
+#branch
+- git branch -a : local & remote
+- git branch mynew : create
+- git checkout : pindah
+- git log --oneline --decorate
+- git branch new
+- git branch -m old new
+
+#fast forward merge
+- develop akan di merge di master
+- buat branch develop
+- buat perubahan di branch develop
+- balik ke master
+- bandingkan perubahan -> git diff master dan develop
+- bandingkan manual
+- git merge develop
+- 1 simulasi lagi
+- delete branch develop
+- check list branch lagi
+- ulangi contoh 2 kali
+
+#no fast forward merge
+- sama seperti diatas
+- git merge develop --no--ff
+
+#merge commit skenario 2
+sama seperi diatas
+
+### membatalkan perubahan
+-git reset --soft HEAD^
+-git reset --hard HEAD^
+-git commit --amend
+
+## rebase
+-- buat skenario buat 3 kommit masing masing branch
+-- check log ya
+-- ulangi rebase sebanyak 2 kali
+
+## rebase abort
+## rebase continue
+-- resolve conflick
+-- git add
+-- git rebase --continue
+-- buat kommit 2 lah
+-- balik master
+-- merge master
+## pull dengan rebase
+-- sikronkan local dan master
+-- buat perubahan di local
+-- check status
+-- buat perubahan di origin
+-- buat status
+-- git fetch origin master
+
+### stashing
+-- buat skenario
+-- git stash save
+-- check git status
+-- check file yang di ubah tadi
+-- ubah file lain
+-- buat 2 komit lah
+-- get back stash tadi
+-- git stash apply
+-- ubah lagi stash tadi hasil perubahan stash
+-- commit lagi ya
+-- cek status lagi
+-- cek list stash
+-- git stash list
+-- git stash drop
+
+### stashing untrack file
+-- buat perubahan di exis file
+-- check status
+-- buat file baru
+-- check status
+-- git stash untuk melihat yang untracked file
+-- balikin stash tadi
+-- apply dulu
+-- baru drop
+-- solusinya bisa 2 pertama tambah dulu
+-- git stash -u
+-- edit fiel lain
+-- di commit ya
+-- git stash pop
+-- modifi lagi
+-- commit ya
+-- cek status lagi
+
+### manage multiple stash
+-- git stash save "pesan"
+-- buat tiga stash yo
+-- cek list stash -> git stash list
+-- show specifik stash -> git stash show stash@{index}
+-- apply specifik stash -> git stash apply stash@{index}
+-- drop specifik stash -> git stash drop stash@{index}
+-- git stash clear
+
+### stashing into branch
+-- skenario kita mau perubahan di branch lain
+-- buat satu staging
+-- buat 2 file modified
+-- buat 1 file untrack
+-- git stash -u
+-- gti stash branch newbranch
+-- commit perubahan
+-- back master
+-- merge
+
+-----------------------------------------------------------------------
+### comparasion simple
+--- buat readme file
+--- push ke origin
+--- buat perubahan lagi 
+--- push ke origin lagi
+-git diff 
+- git diff HEAD
+- git diff --staged HEAD
+- git diff -- file
+- git diff comit HEAD 
+- git diff HEAD HEAD^
+- git diff comit comit
+- git diff master origin/master

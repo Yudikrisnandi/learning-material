@@ -125,3 +125,19 @@ sama seperi diatas
 - git diff HEAD HEAD^
 - git diff comit comit
 - git diff master origin/master
+
+@@@taging
+- check log
+- git tas tagname
+- git tag --list
+- git show tagname
+- git tag --delete name
+- git tag --list
+- check log againt
+@@@ annoted
+- git tag -a v0.0.1 -m "pesan"
+- cek tag list
+- check log
+- git show v.
+
+@@diff tad

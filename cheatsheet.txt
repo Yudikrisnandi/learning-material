@@ -141,3 +141,7 @@ sama seperi diatas
 - git show v.
 
 @@diff tad
+
+-git push origin v.0.0.1-alpa
+-git push origin master --tags
+-git push origin :version delete

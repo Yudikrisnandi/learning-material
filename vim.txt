@@ -1,0 +1,58 @@
+set mouse=""
+set encoding=utf-8
+set tabstop=2
+set softtabstop=2
+set expandtab
+set shiftwidth=2
+set autochdir
+set number
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set cursorline
+"set cursorcolumn
+set title
+
+filetype plugin on
+ 
+map ; : 
+imap jj <Esc>
+cmap jj <c-c>
+vmap v <Esc>
+nmap <C-k> [e
+nmap <C-j> ]e
+map <CR> :nohl<CR>
+nnoremap / /\v 
+vnoremap / /\v 
+ 
+let g:mapleader=','
+nnoremap <leader><leader> <c-^>
+
+call plug#begin('~/.config/vim/plugged')
+Plug 'morhetz/gruvbox'
+Plug 'mattn/emmet-vim'
+Plug 'posva/vim-vue'
+Plug 'mxw/vim-jsx'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'luochen1990/rainbow'
+Plug 'tpope/vim-surround'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-commentary'
+Plug 'aaren/arrowkeyrepurpose'
+Plug 'gorodinskiy/vim-coloresque'
+Plug 'kien/ctrlp.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'yggdroot/indentline'
+Plug 'tpope/vim-unimpaired'
+call plug#end()
+
+set background=dark
+syntax enable
+colorscheme gruvbox
+
+let g:airline#extensions#tabline#enabled = 1
+let g:rainbow_active=1
+let g:user_emmet_leader_key=','
+map <F2> :NERDTree<CR> 

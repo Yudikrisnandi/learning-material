@@ -133,6 +133,7 @@ typeof(num)//output number
 // kondisi
 
 true ? console.log('this true') : console.log('this false');
+[read more here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
 ```
 
 ## Pengkondisian

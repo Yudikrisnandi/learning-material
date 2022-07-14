@@ -19,16 +19,16 @@ Node Collection ada 2 yaitu node list dan HTML Collection
 #### Single element
 
 ```bash
-document.getElementById(idName)
-document.querySelector(.className,#idName,tagName)
+document.getElementById(idName) -> element
+document.querySelector(.className,#idName,tagName) -> element
 ```
 
 #### multi element
 
 ```bash
-document.querySelectorAll(.className)
-document.getElementByClassName(className)
-document.getElementByTagName(tagName)
+document.querySelectorAll(.className) -> nodelist
+document.getElementByClassName(className) -> html collection
+document.getElementByTagName(tagName) -> html collection
 ```
 
 ## DOM Traversal 
@@ -121,4 +121,7 @@ element.onclick = changecolor
 
 ```bash
 element.addEventListener('click', changeColor);
+// mouse event : click, dbclick, mouseup
+// keyboard event 
 ```
+

@@ -573,3 +573,347 @@ function solution(nums1, nums2){
 }
 ```
 
+### No.34
+
+```javascript
+function solution(arr, k){
+  let ans = [0,0]
+  for(let i = 0; i < arr.length; i++){
+    for(let j = i+1; j < arr.length; j++){
+      if(arr[i] + arr[j] === k){
+        ans[0] = i
+        ans[1] = j
+      }
+    }
+  }
+  return ans
+}
+
+```
+
+### No.35
+
+```javascript
+function solution(str){
+    let res = -1;
+    const freq = getFreq(str);
+    let arr = Object.values(freq);
+    let max = Math.max(...arr);
+    
+    const map = getFreq(arr)
+    const largest = map[max]
+    if(largest === 1){
+        res = getKeyByValue(freq, max)
+    }
+    return res;
+}
+
+function getKeyByValue(object, value) {
+  return Object.keys(object).find(key => object[key] === value);
+}
+
+function getFreq(item){
+    let map = {}
+    if(typeof(item) === "string"){
+      item = item.replace(/\s/g, '');
+    }
+    for(let i = 0; i < item.length; i++){
+      if(map[item[i]]){
+        map[item[i]]++
+      }else{
+        map[item[i]] = 1
+      }
+    }
+    return map
+}
+
+```
+
+### No.36
+
+```javascript
+function solution(str){
+    let ans = '';
+    for(let i = 0; i < str.length; i++){
+        if(str[i] === '1'){
+            ans += 'i'
+        }else if(str[i] === '4'){
+            ans += 'a'
+        }else if(str[i] === '3'){
+            ans += 'e'
+        }else if(str[i] === '7') {
+            ans += 'u'
+        }else if(str[i] === '0'){
+            ans += 'o'
+        }else {
+            ans += str[i]
+        }
+    }
+    return ans
+}
+
+```
+
+### No.37
+
+```javascript
+function solution(arr){
+    let x = 0;
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] === "X++" || arr[i] === "++X"){
+            x++;
+        }else{
+            x--;
+        }
+    }
+    return x;
+}
+
+```
+
+### No.38
+
+```javascript
+function solution(str){
+    let len = str.length;
+    let x = 0, y = len - 1;
+    let isPolindrom = true;
+    while(x <= y){
+      if(str[x] !== str[y]){
+        isPolindrom = false;
+      }
+      x++;
+      y--;
+    }
+    if(isPolindrom){
+        return "YES"
+    }
+    return "NO"
+}
+```
+
+### No.39
+
+```javascript
+function solution(ip){
+    const arr = ip.split('');
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] == '.'){
+            arr[i] = "()";
+        }
+    }
+    return arr.join("");
+}
+```
+
+### No.40
+
+```javascript
+function solution(str){
+    let res;
+    const len = str.length;
+
+    for(let i = 0; i < len - 2; i++){
+      if(str[i] === str[i+1] && str[i] === str[i+2]){
+        res = "YES"
+        break;
+      }
+      res = "NO"
+    }
+    return res
+}
+```
+
+### No.41
+
+```javascript
+function solution(str){
+    let ans = str;
+    const len = str.length;
+    if(len < 12){
+        return ans;
+    }
+    const size = len - 2;
+    ans = `${str[0]}${size}${str[len-1]}`
+    return ans
+}
+```
+
+### No.42
+
+```javascript
+function solution(str){
+    const first = str[0].toUpperCase()
+    const second = str.slice(1, str.length)
+    return first.concat(second)
+}
+```
+
+### No.43
+
+```javascript
+function solution(str1, str2){
+    let stra = sortStr(str1)
+    let strb = sortStr(str2)
+    let ans = "YES";
+    for(let i = 0; i < str1.length; i++){
+        if(stra[i] !== strb[i]){
+            ans = "NO";
+            break;
+        }
+    }
+    return ans
+}
+
+function sortStr(str){
+  return str.split('').sort((a, b) => a.localeCompare(b)).join('')
+}
+```
+
+### No.44
+
+```javascript
+function solution(str){
+    let len = str.length;
+    let map = {}
+    for(let i = 0; i < len; i++){
+      if(map[str[i]]){
+        map[str[i]]++
+      }else{
+        map[str[i]] = 1;
+      }
+    }
+    let index = -1;
+    for(let i = 0; i < len; i++){
+      if(map[str[i]] === 1){
+        index = i;
+        break;
+      }
+    }
+    return index
+}
+```
+
+### No.45
+
+```javascript
+function solution(str){
+    const arr = str.split(" ")
+    let ans = ''
+    let count = 0;
+    for(let i = 0; i < arr.length; i++){
+      if(arr[i].length > count){
+        ans = arr[i]
+        count = arr[i].length;
+      }
+    }
+    return ans;
+}
+```
+
+### No.46
+
+```javascript
+function solution(str1, str2){
+    let ans = "YES";
+    let len = str1.length;
+    for(let i = 0, j = len-1; i < len; i++, j--){
+        if(str1[i] !== str2[j]){
+            ans = "NO"
+            break;
+        }
+    }
+    return ans
+}
+```
+
+### No.47
+
+```javascript
+function solution(str1, str2){
+    const map = {};
+    for(let i = 0; i < str2.length; i++){
+        if(map[str2[i]]){
+            map[str2[i]]++;
+        }else{
+            map[str2[i]] = 1;
+        }
+    }
+    let ans = 0;
+    for(let i = 0; i < str1.length; i++){
+        if(map[str1[i]]){
+            ans += map[str1[i]]
+        }
+    }
+    return ans
+}
+```
+
+### No.48
+
+```javascript
+function solution(str){
+    let res = "NO";
+    for(let i = 0; i < str.length; i++){
+        if(str[i] === "a"){
+            if(str.indexOf("b", i + 4) !== -1){
+              res = "YES";
+            }
+        }
+        if(str[i] === "b"){
+            if(str.indexOf("a", i + 4) !== -1){
+              res = "YES";
+            }
+        }
+    }
+    return res;
+}
+```
+
+### No.49
+
+```javascript
+function solution(s){
+    let ans = [];
+    let arr = s.split(' ');
+    for(let i = 1; i <= arr.length; i++){
+        let t = i.toString();
+        let item = arr.find(item => item.includes(t)).slice(0, -1);
+        ans.push(item);
+    }
+    
+    return ans.join(' ');
+}
+```
+
+### No.50
+
+```javascript
+function solution(s){
+    if(s.length < 26){
+        return false
+    }
+    const map = {};
+    
+    for(let i = 0; i < s.length; i++){
+        if(map[s[i]]){
+            map[s[i]]++;
+        }else{
+            map[s[i]] = 1;
+        }
+    }
+    let size = Object.keys(map).length;
+    return size >= 26 ? "YES" : "NO";
+}
+```
+
+### No.51
+
+```javascript
+function solution(s, k){
+    const arr = s.split(" ");
+    const ans = arr.slice(0, k);
+    return ans.join(" ");
+}
+```
+
